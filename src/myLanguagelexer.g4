@@ -13,6 +13,7 @@ STYLES: 'styles';
 CATCH: 'catch';
 ERR: 'err';
 BOOTSTRAP: 'bootstrapApplication';
+EXPORT : 'export';
  //  type
  STRING_TYPE: 'string';
  NUMBER_TYPE: 'number';
@@ -34,6 +35,7 @@ ARROW: '=>';
 AT_SYMBOL:'@';
 LESS_THAN :'<';
 GRET_THAN:'>';
+EQUAL :'=';
 
 
 
