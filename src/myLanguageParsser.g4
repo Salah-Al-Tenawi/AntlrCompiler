@@ -50,7 +50,7 @@ assignmentExpression
 objectMember
     : THIS DOT ID
     ;
-// القيم الحرفية
+
 literal
     : STRING
     | NUMBER

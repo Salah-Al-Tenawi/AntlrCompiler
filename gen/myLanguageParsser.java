@@ -1,4 +1,4 @@
-// Generated from C:/Users/SALAH/IdeaProjects/compiler/src/myLanguageParsser.g4 by ANTLR 4.13.2
+// Generated from C:/Users/SALAH/IdeaProjects/compiler/src\myLanguageParsser.g4 by ANTLR 4.10.1
 package gen;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue", "this-escape"})
+@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class myLanguageParsser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.13.2", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.10.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -111,7 +111,6 @@ public class myLanguageParsser extends Parser {
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class ImportsContext extends ParserRuleContext {
 		public TerminalNode IMPORT() { return getToken(myLanguageParsser.IMPORT, 0); }
 		public TerminalNode LBRACE() { return getToken(myLanguageParsser.LBRACE, 0); }
@@ -172,7 +171,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class FileContext extends ParserRuleContext {
 		public List<InterfaceDeclarationContext> interfaceDeclaration() {
 			return getRuleContexts(InterfaceDeclarationContext.class);
@@ -221,7 +219,7 @@ public class myLanguageParsser extends Parser {
 			setState(63);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 67149824L) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << INTERFACE) | (1L << AT_SYMBOL) | (1L << EXPORT))) != 0)) {
 				{
 				setState(61);
 				_errHandler.sync(this);
@@ -265,7 +263,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class InterfaceDeclarationContext extends ParserRuleContext {
 		public TerminalNode INTERFACE() { return getToken(myLanguageParsser.INTERFACE, 0); }
 		public TerminalNode ID() { return getToken(myLanguageParsser.ID, 0); }
@@ -338,7 +335,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class InterfaceFieldContext extends ParserRuleContext {
 		public TerminalNode ID() { return getToken(myLanguageParsser.ID, 0); }
 		public TerminalNode COLON() { return getToken(myLanguageParsser.COLON, 0); }
@@ -392,7 +388,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class ComponentDeclrationContext extends ParserRuleContext {
 		public TerminalNode AT_SYMBOL() { return getToken(myLanguageParsser.AT_SYMBOL, 0); }
 		public TerminalNode COMPONENT() { return getToken(myLanguageParsser.COMPONENT, 0); }
@@ -449,7 +444,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class ComponentConfigContext extends ParserRuleContext {
 		public TerminalNode LBRACE() { return getToken(myLanguageParsser.LBRACE, 0); }
 		public List<ConfigFieldContext> configField() {
@@ -524,7 +518,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class ConfigFieldContext extends ParserRuleContext {
 		public TerminalNode SELECTOR() { return getToken(myLanguageParsser.SELECTOR, 0); }
 		public TerminalNode COLON() { return getToken(myLanguageParsser.COLON, 0); }
@@ -638,7 +631,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class TemplateBodyContext extends ParserRuleContext {
 		public TemplateBodyContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -678,7 +670,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class StyleContext extends ParserRuleContext {
 		public StyleContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -718,7 +709,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class ClassDeclarationContext extends ParserRuleContext {
 		public TerminalNode EXPORT() { return getToken(myLanguageParsser.EXPORT, 0); }
 		public TerminalNode CLASS() { return getToken(myLanguageParsser.CLASS, 0); }
@@ -772,7 +762,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class ClassbodyContext extends ParserRuleContext {
 		public TerminalNode LBRACE() { return getToken(myLanguageParsser.LBRACE, 0); }
 		public TerminalNode RBRACE() { return getToken(myLanguageParsser.RBRACE, 0); }
@@ -839,7 +828,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class ClassmemberContext extends ParserRuleContext {
 		public VariableDeclartionContext variableDeclartion() {
 			return getRuleContext(VariableDeclartionContext.class,0);
@@ -900,7 +888,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class VariableDeclartionContext extends ParserRuleContext {
 		public TerminalNode ID() { return getToken(myLanguageParsser.ID, 0); }
 		public TerminalNode COLON() { return getToken(myLanguageParsser.COLON, 0); }
@@ -954,7 +941,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class FunctionDeclartionContext extends ParserRuleContext {
 		public TerminalNode ID() { return getToken(myLanguageParsser.ID, 0); }
 		public TerminalNode LPAREN() { return getToken(myLanguageParsser.LPAREN, 0); }
@@ -1030,7 +1016,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class FunctionParametersContext extends ParserRuleContext {
 		public List<FunctionParameterContext> functionParameter() {
 			return getRuleContexts(FunctionParameterContext.class);
@@ -1099,7 +1084,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class FunctionParameterContext extends ParserRuleContext {
 		public TerminalNode ID() { return getToken(myLanguageParsser.ID, 0); }
 		public TerminalNode COLON() { return getToken(myLanguageParsser.COLON, 0); }
@@ -1150,7 +1134,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class FunctionBodyContext extends ParserRuleContext {
 		public TerminalNode LBRACE() { return getToken(myLanguageParsser.LBRACE, 0); }
 		public TerminalNode RBRACE() { return getToken(myLanguageParsser.RBRACE, 0); }
@@ -1191,7 +1174,7 @@ public class myLanguageParsser extends Parser {
 			setState(168);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 44027611408L) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << NUMBER) | (1L << ID) | (1L << STRING) | (1L << BOOLEAN) | (1L << LBRACKET) | (1L << THIS) | (1L << NULL))) != 0)) {
 				{
 				{
 				setState(165);
@@ -1217,7 +1200,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class StatementContext extends ParserRuleContext {
 		public VariableDeclartionContext variableDeclartion() {
 			return getRuleContext(VariableDeclartionContext.class,0);
@@ -1281,7 +1263,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class ArrayContext extends ParserRuleContext {
 		public TerminalNode LBRACKET() { return getToken(myLanguageParsser.LBRACKET, 0); }
 		public TerminalNode RBRACKET() { return getToken(myLanguageParsser.RBRACKET, 0); }
@@ -1326,7 +1307,7 @@ public class myLanguageParsser extends Parser {
 			setState(188);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 44027611408L) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << NUMBER) | (1L << ID) | (1L << STRING) | (1L << BOOLEAN) | (1L << LBRACKET) | (1L << THIS) | (1L << NULL))) != 0)) {
 				{
 				setState(180);
 				expression();
@@ -1364,7 +1345,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class ExpressionContext extends ParserRuleContext {
 		public LiteralContext literal() {
 			return getRuleContext(LiteralContext.class,0);
@@ -1443,7 +1423,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class AssignmentExpressionContext extends ParserRuleContext {
 		public TerminalNode ID() { return getToken(myLanguageParsser.ID, 0); }
 		public TerminalNode EQUAL() { return getToken(myLanguageParsser.EQUAL, 0); }
@@ -1516,7 +1495,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class ObjectMemberContext extends ParserRuleContext {
 		public TerminalNode THIS() { return getToken(myLanguageParsser.THIS, 0); }
 		public TerminalNode DOT() { return getToken(myLanguageParsser.DOT, 0); }
@@ -1565,7 +1543,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class LiteralContext extends ParserRuleContext {
 		public TerminalNode STRING() { return getToken(myLanguageParsser.STRING, 0); }
 		public TerminalNode NUMBER() { return getToken(myLanguageParsser.NUMBER, 0); }
@@ -1599,7 +1576,7 @@ public class myLanguageParsser extends Parser {
 			{
 			setState(211);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 34363934736L) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << NUMBER) | (1L << STRING) | (1L << BOOLEAN) | (1L << NULL))) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -1620,7 +1597,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class TypeContext extends ParserRuleContext {
 		public TerminalNode STRING_TYPE() { return getToken(myLanguageParsser.STRING_TYPE, 0); }
 		public TerminalNode NUMBER_TYPE() { return getToken(myLanguageParsser.NUMBER_TYPE, 0); }
@@ -1655,7 +1631,7 @@ public class myLanguageParsser extends Parser {
 			{
 			setState(213);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 1030792151296L) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << ID) | (1L << STRING_TYPE) | (1L << NUMBER_TYPE) | (1L << BOOLEAN_TYPE) | (1L << ANY_TYPE))) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -1676,7 +1652,6 @@ public class myLanguageParsser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class ArrayValueContext extends ParserRuleContext {
 		public TerminalNode LBRACKET() { return getToken(myLanguageParsser.LBRACKET, 0); }
 		public TerminalNode RBRACKET() { return getToken(myLanguageParsser.RBRACKET, 0); }
