@@ -19,6 +19,7 @@ EXPORT : 'export';
  NUMBER_TYPE: 'number';
  BOOLEAN_TYPE: 'boolean';
  ANY_TYPE: 'any';
+ THIS : 'this';
 
 // الرموز
 LBRACE: '{';
@@ -36,6 +37,8 @@ AT_SYMBOL:'@';
 LESS_THAN :'<';
 GRET_THAN:'>';
 EQUAL :'=';
+QUOTATION : '"';
+
 
 
 
